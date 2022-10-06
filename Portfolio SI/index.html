@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio - Adnan Čaušević</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f0da5b046.js" crossorigin="anonymous"></script>  <!------SKRIPTA KOJA UZIMA IKONE SA STRANICE FONTAWESOME-->
+</head>
+
+<!-----------------------POČETNA STRANICA------------------------->
+
+<body>
+    <div id="zaglavlje">
+        <div class="container">
+            <nav>
+                <img src="slike/TGS.png" class="logo">
+                <ul>
+                    <li><a href="#omeni">O meni</a></li>
+                    <li><a href="#Vještine">Vještine</a></li>
+                    <li><a href="#projekti">Projekti</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="zaglavlje-tekst">
+                <p>Programer / Web dizajner</p>
+                <h1>Zdravo, ja sam <span>Adnan</span><br><span>Čaušević</span>, učenik <span>Treće gimnazije</span><br>
+                    u Sarajevu.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------O MENI--------------->
+
+    <div id="omeni">
+        <div class="container">
+            <div class="red">
+                <div class="omeni-red-lijevi">
+                    <img src="slike/mojaslika.png">
+                </div>
+                <div class="omeni-red-desni">
+                    <h1 class="podnaslov">Više o meni</h1>
+                    <p><br>Rođen sam 9 maja 2004. godine u Sarajevu. Imam 18 godina i pohađam 4 razred Treće gimnazije,
+                        IT usmjerenje. Osnovno obrazovanje sam stekao u OŠ "Džemaludin Čaušević", također u Sarajevu.
+                        Tu se ujedno i pojavilo zanimanje za Informatiku i Programiranje. Po preporuci prijatelja,
+                        upisao sam Treću gimnaziju i počeo učiti programirati.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('vještine')">Vještine</p>
+                        <p class="tab-links" onclick="opentab('iskustvo')">Iskustvo</p>
+                        <p class="tab-links" onclick="opentab('edukacija')">Edukacija</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="vještine">
+                        <ul>
+                            <li><span>User Interface / User Experience</span><br>Dizajniranje web stranica i Android
+                                aplikacija</li>
+                            <li><span>Programiranje</span><br>C++, Python, SQL, HTML, CSS...</li>
+                            <li><span>Projektovanje, Šeme</span><br>Arduino, Microbit...</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="iskustvo">
+                        <ul>
+                            <br><br>
+                            <li><span>Prvi razred</span><br>C++</li>
+                            <li><span>Drugi razred</span><br>Python</li>
+                            <li><span>Treći razred</span><br>SQL, Not Only SQL (NOSQL)</li>
+                            <li><span>Četvrti razred</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Projekti</span><br>Arduino, Scratch, MicroBit</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="edukacija">
+                        <ul>
+                            <br><br>
+                            <li><span>Osnovna škola</span><br>Oš "Džemaludin Čaušević"</li>
+                            <li><span>Srednja škola</span><br>Treća gimnazija</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------VJEŠTINE------------------------->
+
+    <div id="Vještine">
+        <div class="container">
+            <h1 class="Podnaslov">Moje vještine</h1>
+            <div class="mojevještine">
+                <div>
+                    <i class="fa-solid fa-code"></i>     <!--------POZIVANJE IKONICE SA MOJEG KORISNIČKOG RAČUNA STRANICE FONTAWESOME-------->
+                    <h2>Programiranje u raznim programskim jezicima</h2>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Arduino / MicroBit projektovanje i crtanje šema u Tinkercad-u</h2>
+                    <a href="#">Povratak na glavnu stranicu</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Dizajniranje Android aplikacija / Web stranica</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------PROJEKTI----------------------->
+
+    <div id="projekti">
+        <div class="container">
+            <h1 class="Podnaslov">Moji projekti</h1>
+            <div class="listaprojekata">
+                <div class="projekat">
+                    <img src="slike/proj1.png">
+                    <div class="sloj">
+                        <h3>Database program u C++</h3>
+                        <p>Jednostavan program koji se može koristiti lokalno a i u mnogobrojnim firmama.</p>
+                        <a href="#"><i class="fa-solid fa-database"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="projekat">
+                    <img src="slike/proj2.jpg">
+                    <div class="sloj">
+                        <h3>Arduino uređaj za mjerenje udaljenosti</h3>
+                        <p>Uređaj koji uz pomoć ultrasoničnih valova određuje udaljenost nekog predmeta.</p>
+                        <a href="#"><i class="fa-solid fa-tachograph-digital"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="projekat">
+                    <img src="slike/proj3.jpg">
+                    <div class="sloj">
+                        <h3>Projekat "Željo"</h3>
+                        <p>Interaktivna replika stadiona fudbalskog kluba Željezničar. Golovi su spojeni na MicroBit i
+                            pokazuju postignute golove na ekranu.</p>
+                        <a href="#"><i class="fa-regular fa-futbol"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------KONTAKT------------>
+
+    <div id="kontakt">
+        <div class="container">
+            <div class="red">
+                <div class="kontakt-lijevi">
+                    <h1 class="podnaslov">Kontaktirajte me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>adnan.causevic@treca-gimnazija.edu.ba</p>
+                    <p><i class="fa-solid fa-phone"></i>+387601234567</p>
+
+                    <div class="ikonicesocijalne">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Slike/Bilješke.docx" download class="dgme dgme2">Preuzmite bilješke o projektu "Portfolio"</a>
+                </div>
+
+                <div class="kontakt-desni">
+                    <form>
+                        <input type="text" name="Ime" placeholder="Vaše ime" required>
+                        <input type="email" name="Email" placeholder="Vaš Email" required>
+                        <input type="date" name="date" placeholder="Datum rođenja" required>
+                        <input type="password" name="Šifra" minlength="2" maxlength="6" placeholder="Vaša šifra" name="Šifra" required>
+                        <textarea name="Message" rows="6" placeholder="Vaša poruka"></textarea>
+                        <button type="submit" class="dgme dgme2">Potvrdi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="prof">
+            <p>Profesor Softver Inžinjeringa: Admir Demir <i class="fa-sharp fa-solid fa-person-chalkboard"></i> </p>
+        </div>
+    </div>
+
+<!-----------------------SKRIPTA KOJA SAKRIVA/OTKRIVA AKTIVNE TABOVE U DIJELU "O MENI"------------------------->
+
+    <script>  
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
